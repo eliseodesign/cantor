@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORIA | PFC</title>
+    <link rel="stylesheet" href="./assets/css/estilos_generales.css">
+
+    <link rel="stylesheet" href="./assets/css/historia.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <div class="nav__container">
+
+            <h1 class="nav__logo">Historia</h1>
+
+            <input type="checkbox" id="menu" class="nav__input">
+            <label for="menu" class="nav__label">
+
+
+                <div class="nav__img" id="menu" onclick="myFunction(this)">
+                    <div class="linea-1"></div>
+                    <div class="linea-2"></div>
+                    <div class="linea-3"></div>
+                </div>
+                <!-- <div class="menu-container" id="menu"></div> -->
+
+
+
+                <!-- <img src="./assets/svg/menu.svg" class="nav__img" alt=""> -->
+
+            </label>
+
+
+
+
+            <div class="nav__menu">
+                <a href="./index.html" class="nav__item">Inicio</a>
+                <a href="./historia.html" class="nav__item" id="actual-item">Historia</a>
+                <a href="#" class="nav__item">Logros</a>
+                <a href="#" class="nav__item">Contacto</a>
+
+                <ul>
+                    <button class="bdark " id="bdark">
+                        <span><i class='bx bxs-sun'></i></span>
+                        <span><i class='bx bxs-moon'></i></span>
+
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- m e n u L A T E R A L D E C O N T E N D O -->
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul class="aaa">
+            <li class="has-subnav">
+                <a href="#">
+                    <p class="fa"> <i class='bx bx-book-open'></i> </p>
+                    <span class="nav-text">
+                        En busqueda de nuestro nombre
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#directores">
+                    <p class="fa"> <i class='bx bxs-user'></i> </p>
+                    <span class="nav-text">
+                        Directores
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#uniforme">
+                    <p class="fa"> <i class='bx bxs-t-shirt'></i> </p>
+                    <span class="nav-text">
+                        Uniforme
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#aqui">
+                    <p class="fa"> <i class='bx bx-home-alt'></i> </p>
+                    <span class="nav-text">
+                        Aqui estuvimos
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#bachillerato">
+                    <p class="fa"> <i class='bx bx-pin'></i> </p>
+                    <span class="nav-text">
+                        Nacimiento del bachillerato
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa"> T</i>
+                    <span class="nav-text">
+                        Forms
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa">N</i>
+                    <span class="nav-text">
+                        Forms
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa">O</i>
+                    <span class="nav-text">
+                        Forms
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa">C</i>
+                    <span class="nav-text">
+                        Forms
+                    </span>
+                </a>
+
+            </li>
+        </ul>
+
+
+    </nav>
+
+
+
+
+
+
+    <main>
+
+
+
+
+
+        <!-- <div class="general-div">
+                        <h1 class="title-seccion"><i class='bx bx-book-open'></i> En busqueda de nuestro nombre</h1>
+
+                        <hr>
+                        <div id="left">
+                            <h2>Fundación y cambios de nuestro nombre</h2> <br>
+                            <p id="p">Luego de recolectar registros e información se concluye que nuestro centro
+                                educativo no tiene punto de partida exacto, pero se puede redondear a
+                                <strong>1917.</strong>
+                                En 1859 se cons Este Instituto indígena llegó a desaparece por un tiempo dejando a los
+                                niños indígenas sin educación; se cree que este sector marginado de la población fue la
+                                inspiración de Gustavo Gonzáles para hacer resurgir en 1940 la "Escuela de varones No.
+                                <br> <br>
+                                <p id="p">Este Instituto indígena llegó a desaparece por un tiempo dejando a los niños
+                                    indígenas sin educación; se cree que este sector marginado de la población fue la
+                                    inspiración de Gustavo Gonzáles para hacer resurgir en 1940 la "Escuela de varones
+                                    No.2". <br> <br> Llegados 1948 ya atendía a alumnos de primero a cuarto grado.</p>
+                        </div>
+
+                        <div id="rigth">
+                            <h2>Resumen Nombres</h2> <br>
+                            <p><strong>1859</strong> : <br> Escuela de varones | Escuela de niñas</p>
+                            <p><strong>1940</strong>: <br> Escuela de varones No.2 </p>
+                            <p><strong>1952</strong>: <br> Escuela de varones Pedro F. Cantor</p>
+                            <p><strong>1978</strong>: <br> Escuela unificada Pedro F. Cantor</p>
+                            <p><strong>1983</strong>: <br> Escuela Urbana Mixta Pedro F. Cantor</p>
+                            <p><strong>1998</strong>: <br> Complejo Educativo Pedro F. Cantor</p>
+
+
+                        </div>
+
+
+
+
+                    </div> -->
+
+
+
+
+        <div id="down">
+            <div class="general-div">
+
+                <h1 class="title-seccion" id="directores"><i class='bx bxs-user'></i> Directores</h1>
+
+                <hr>
+
+
+
+                <div class="directores">
+                    <div class="container-img__directores">
+                        <img class="img__directores" src="./img/historia/GustavoGonzales.png">
+                    </div>
+
+                    <aside> <b> Profesor Gustavo González </b> <br> <br>
+                        Bajo su responsabilidad en 1940 aparece la Escuela de varones No. 2 conocida como la
+                        Escuela de Don Tavo.</aside>
+
+                </div>
+
+                <div class="directores">
+                    <div class="container-img__directores">
+                        <img class="img__directores" src="./img/historia/OscarRicardo.png">
+
+                    </div>
+                    <aside> <b> Oscar Ricardo Aguilar Galdámez</b> <br> <br>
+                        Toma la Dirección de la Escuela Unificada “Pedro F. Cantor”, el 1 de febrero de 1979
+                        y se retira el 1 de julio de 1991, habiendo laborado por 12 años.</aside>
+
+                </div>
+
+
+
+                <div class="directores">
+                    <div class="container-img__directores">
+                        <img class="img__directores" src="./img/historia/3.png">
+                    </div>
+                    <aside> <b>Profesor Alfredo Calvo Pacheco</b> <br> <br>
+                        Toma posesión de su cargo como Director de la "Sección Oficial de Enseñanza Media de
+                        Izalco", el 4 de julio de 1968. Laboró por 9 años.</aside>
+                </div>
+
+
+
+                <div class="directores">
+                    <div class="container-img__directores">
+                        <img class="img__directores" src="./img/historia/Carlos.png">
+
+                    </div>
+                    <aside> <b>Lic. Carlos Alberto García Ruiz</b> <br> <br>
+                        Asume la Dirección de la Escuela Urbana Mixta Unificada "Pedro F. Cantor", el 14 de
+                        abril de 1994. Hasta el año del Centenario, continúa laborando, por un período de 23
+                        años, en el ahora Complejo Educativo Pedro F. Cantor.</aside>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="empy"></div>
+
+
+
+
+        <section class="slider-uniforme">
+
+            <h1 class="title-seccion"><i class='bx bxs-t-shirt'></i> Uniforme</h1>
+
+            <hr>
+            <div class="slider" id="uniforme">
+                <ul>
+                    <li><img src="./img/historia/SLIDERuniforme/slider1.png""></li>
+                                <li><img src=" ./img/historia/SLIDERuniforme/slider2.png"> </li> <li><img
+                            src="./img/historia/SLIDERuniforme/slider3.png"></li>
+                    <li><img src="./img/historia/SLIDERuniforme/slider4.jpg"></li>
+                </ul>
+            </div>
+
+            <div class="uniforme-">
+                <p>Hoy, por las razones que todos conocemos, se utiliza el uniforme diseñado en 2009 por el
+                    Gobierno de la República para el caso de Educación Media,
+                    optamos por utilizar ambos diseños. Todo evoluciona, pero vivirán en nuestra memoria,
+                    los distintos uniformes con los que hemos escrito también gran parte de nuestra
+                    historia.</p>
+                <br> <br>
+                <p>Desde 1917 hasta aproximadamente la Reforma Educativa de 1968, todo indica que a partir
+                    de ese año se comenzó a utilizar el color gris-falda y pantalón-, y la camisa o blusa
+                    blanca y los zapatos negros. Fue utilzado por alumnos de primero a noveno grado.</p>
+                <br>
+                <br>
+                <p>Luego tomamos la decisión de concretizar el color verde con blanco y logo amarillo como
+                    oficial, para el Bachillerato partiendo de la idea de denominarnos "Leones” sustentada
+                    en nuestro espíritu y mística de trabajo.</p> <br>
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+
+        <section class="aquiEstuvimos" id="aqui">
+            <h1 class="title-seccion"><i class='bx bx-home-alt'></i> Aqui estuvimos...</h1>
+            <div class="linea"></div>
+
+            <hr>
+
+            <div class="container-t">
+                <img src="./img/historia/terreno-1.png" alt="">
+                <img src="./img/historia/terreno-2.png" alt="">
+                <img src="./img/historia/terreno-3.png" alt="">
+
+            </div>
+
+            <div class="aquiEstuvimos__txt">
+
+
+                <p> <b>1917</b>. Escuela de indígenas de Izalco (antiguo terreno y casa de la familia
+                    Sánchez) </p> <br>
+                <p> <b>1948</b>. Local de la escuela de varones No. 2 (Antigua propiedad de Don Daniel Vega)
+                </p> <br>
+                <p> <b>1954</b>. Local de la Escuela Pedro F. Cantor (Esquina opuesta a la antigua farmacia
+                    Santa Isabel)</p> <br>
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <article class="bachillerato" id="bachillerato">
+
+            <h1 class="title-seccion" id="directores"><i class='bx bx-pin'></i> Nacimiento del bachillerato
+            </h1>
+
+            <hr>
+
+            <div class="conten__b_img">
+                <img src="./assets/svg/teacher.svg" alt="">
+            </div>
+
+
+
+            <section class="bachillerato__txt">
+
+
+                <p>Nos narra el Lic. Carlos A. García:
+                    "Hacia 1994, una nueva Administración surgía. Había muchas expectativas y proyectos que
+                    eran producto de observar las condiciones en que la Dirección de era recibida.
+                    Observamos que por lo menos 120 alumnos/as de noveno grado egresaban; de esto, sólo el
+                    30% continuaban sus estudios de bachillerato en Sonsonate e Izalco donde ya había un
+                    público y otro privado. <br> <br>
+                    En ese año, platicamos con los estudiantes que ya no continuarían sus estudios y así fue
+                    como se consideró la posibilidad de ofrecer que este 70% continuara estudiando en
+                    nuestra Institución. <br> </p>
+
+                <span class="hide" id="hideText">
+                    <p>
+                        Nos abocamos al Profesor Braulio Antonio Jerez Mangandi quien en ese tiempo fungia
+                        como Supervisor Nacional de Educación, planteándole nuestra idea de ampliar nuestros
+                        servicios educativos. La idea le pareció factible y nos recomendó hablar con la
+                        Dirección Departamental de Educación de Sonsonate; con el aval de esta oficina,
+                        presentamos la Solicitud de Ampliación de Servicios; en 1997 nos aventuramos a
+                        iniciar con el Bachillerato General; para ello, se buscó al Personal Docente nuestro
+                        y algunos profesores, horas y clases fueron pagados con fondos propios. <br>
+                        De los estudiantes que egresaron del 9. grado en 1996, solamente 7 creyeron en el
+                        proyecto: Nery Bladimir Fraile Jiménez, Virginia Geraldine Fraile Rodríguez, Maria
+                        Alicia Leiva Palacios, Roxana del Carmen Morales Díaz, Marta Elena Musto Najo,
+                        William Oswaldo Ramírez Másin, José Francisco Recinos Molina, Carolina Patricia
+                        Sánchez Gómez y Lorena Patricia Santamaría Recinos. <br> <br>
+                        Por la poca cantidad de estudiantes, optamos por salir a “conquistar” exalumnos que
+                        habían egresado de 9° grado en años anteriores; los profesores Lilian Areli
+                        González, Sara Yudis de Rodríguez, Carmen Aragón de Sigüenza y
+                        Francisco David González, lograron “convencer” a 12 exalumnos y fue así como se
+                        formó la primera sección de primer Año de Bachillerato General, integrada por 17
+                        alumnos/as. <br>
+                        Iniciamos en enero de 1997 en medio de muchas dudas y comentarios tanto internos
+                        como externos, sobresaliendo la idea que nuestro Bachillerato era una "Isla de la
+                        Fantasía" y otros comentarios más fuertes como:
+                        "Carlos está loco", “Crear un Bachillerato... ¡Están locos!", "Ya se van a venir
+                        abajo”, entre otros tantos.
+                        Traemos esto a colación estimados lectores, para que conozcamos los retos que
+                        tuvimos que afrontar y que felizmente hoy, al ver hacia atrás, sin dudar decimos que
+                        supimos superarlos.
+                    </p>
+                </span>
+
+
+
+
+            </section>
+            <button class="readMore_btn" id="hideText_btn">Leer más</button>
+        </article>
+
+
+
+
+
+
+    </main>
+
+
+
+    <div class="vacio"></div>
+
+
+
+
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Codigo infraestructura</h4>
+                <p>10635</p>
+            </div>
+            <div class="content-foo">
+                <a href="@cantor10635yahoo.com">
+                    <h4>Correo</h4>
+                    <p>@cantor10635yahoo.com</p>
+                </a>
+            </div>
+            <div class="content-foo">
+                <a href="https://goo.gl/maps/NzwNG1ThP9nWfFgz8">
+                    <h4>Ubicación</h4>
+                    <p>COED PFC, Calle union, Izalco</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-final"> </h2>
+        <h2 class="titulo-final">Web developer: Eliseo Arévalo Espinoza </h2>
+
+        <!--<h3 class="titulo-final" > Yeimi Mendez  - Diseñador web</h3>
+    <h3 class="titulo-final" > Sarai Hidalgo   - Desarrollador web</h3>
+    <h3 class="titulo-final" > Kenia Arévalo - Desarrollador web</h3>
+    <h3 class="titulo-final" > Carlos Pasin - Desarrollador web</h3>
+    <h3 class="titulo-final" > Marilyn Alfaro - Desarrollador web</h3>-->
+    </footer>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/dark.js"></script>
+    <script src="./js/recordarButton.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

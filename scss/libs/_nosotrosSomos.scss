@@ -1,0 +1,93 @@
+.uno {
+    width: 100%;
+}
+
+
+.phrase {
+    display: inline-flex;
+    color: #fff;
+    font-size: 1.2vw;
+    // margin-top: 1.5vw;
+
+ 
+
+    
+}
+
+.words {
+    
+    overflow: hidden;
+    
+    height: 1em;
+    margin-left: 0em;
+    color: 	#808080;
+
+    
+}
+
+.words i {
+    display: block;
+    font-style: normal;
+    font-family:sans-serif;
+    
+
+    
+    animation:
+    textRotate 
+    8000ms
+    700ms
+    infinite;
+
+    transition: 0.3;
+
+   
+}
+
+@keyframes textRotate {
+    0% {
+        transform:translateY(0%);
+        color: 	#888;
+    }
+    15% {
+        transform:translateY(0%);
+        
+        color: 	#888;
+        
+    }
+    25% {
+        transform:translateY(0%);
+        color: rgba	#888;
+    }
+    35% {
+        transform:translateY(-112%);
+        color: rgb(110, 128, 83);
+        
+    }
+    50% {
+        transform:translateY(-100%);
+        color: #95be51;
+        
+    }
+    60% {
+        transform:translateY(-212%);
+        color: #51be7e;
+    }
+    75% {
+        transform:translateY(-200%);
+        color:  #51bea6;
+    }
+    85% {
+        transform:translateY(-312%);
+        color: #5a3ed6;
+        
+    }
+    95% {
+        transform:translateY(-300%);
+        color: #5a3ed6;
+        
+    }
+    100% {
+        transform: translateY(0);
+        color: #888;
+    }
+}

@@ -1,0 +1,161 @@
+.nav__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 300px; */
+    cursor: pointer;
+
+  }
+  
+  .linea-1,
+  .linea-2,
+  .linea-3 {
+    width: 35px;
+    height: 6px;
+
+    border-radius: 10px;
+    background-color:rgb(41, 41, 41);
+    margin: 3px 0px;
+  }
+    .linea-1::selection {
+      background: transparent;
+    }
+    .linea-2::selection {
+      background: transparent;
+    }
+    .linea-3::selection {
+      background: transparent;
+    }
+  /* body.darkmode .linea-1,
+  body.darkmode .linea-2,
+  body.darkmode .linea-3 {
+
+    background-color: rgb(231, 231, 231);
+    
+  } */
+  
+  .change .linea-1 {
+    transform: rotate(-45deg) translate(3px, -2px);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.753);
+
+    transition: transform,
+    .5s;
+
+    
+  }
+ 
+  
+  .change .linea-2 {
+    transform:translateX(10px);
+    opacity: 0;
+  }
+  
+  .change .linea-3 {
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg) translate(-6px, -7px);
+
+    transition: transform,
+    .5s;
+
+  }
+
+
+
+
+
+  body.darkmode .linea-1,
+  body.darkmode .linea-2,
+  body.darkmode .linea-3 {
+    background-color: #8fa864;
+    
+    box-shadow:  -1px 1px 100px #73a811af; 
+    
+  }
+  body.darkmode .change.linea-1{
+    background-color: #8fa864;
+    
+    box-shadow:  -11px 11px 25px #424d2e8c;   
+  }
+  body.darkmode .change.linea-4{
+    background-color: #8fa864;
+    
+    box-shadow:  -11px 11px 25px #424d2e8c;   
+  }
+
+
+  .bdark{
+    background: #202e47;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+} 
+.bdark span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    background: none;
+}
+.bdark::after{
+    display: block;
+    background: #fffbf5;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:unset;
+    border-radius: 50%;
+
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content:'';
+}
+
+
+
+.bdark.active{
+    background-color: #8fa864fa;
+    
+    box-shadow:  -1px 1px 50px #73a811af; 
+
+}
+.bdark.active::after{
+    left:unset;
+    right: 0;
+}
+
+
+
+
+/*!ESTILOS NOCHE Y DIA*/
+body{
+    background-color: #eee;
+    color: #222;
+    padding: 0;
+}
+
+body.darkmode{
+    background: #0d131a;
+    color:#ccc;
+}
+
+main{
+  background-color:#eee;
+}
+body.darkmode main{
+  background: #0d131a
+}
+
+
+
+
+

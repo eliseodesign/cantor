@@ -1,0 +1,60 @@
+// handle
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+html{
+    box-sizing: border-box;
+}
+.welcome-historia{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+
+    .img-book{
+        box-sizing: border-box;
+        width: 60%;
+        opacity: .9;
+        animation: book-rotate 3s ease-in infinite alternate ; 
+        // transform: rotate(30deg);
+    }
+
+    span{
+        text-align: center;
+        font-family: 'Handlee', sans-serif;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width:900px){
+    .welcome-historia{
+        flex-direction: row;
+        height: 70vh;
+        margin-bottom: 2em;
+
+        .img-book{
+            width: 50%;
+        }
+        
+        span{
+            font-size: 2em;
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+@keyframes book-rotate{
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(30deg);
+    }
+}

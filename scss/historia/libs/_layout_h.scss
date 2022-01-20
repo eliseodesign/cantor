@@ -1,0 +1,331 @@
+
+html {
+    scroll-behavior: all 5s;
+
+}
+
+:root{
+    --card-color:rgb(255, 255, 255);
+    --solo-white:transparent;
+    --title-color:#627c35;
+
+    --color: #999;
+}
+
+body.darkmode{
+    --card-color:#02070c;
+    --solo-white:transparent;
+    --title-color:#95b660;
+    --color:#444;
+    
+
+}
+body{
+    background: rgb(235, 235, 235);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.center{
+    margin: auto;
+    width: max-content;
+}
+
+main{
+    background:none;
+    padding-top: 70px;
+    width: 90%;
+    margin-top: 70px;
+    margin: auto;
+
+    .layer{
+        padding-top: 2vh;
+        width: 100%;
+        
+
+        .card{
+            background:var(--card-color),;
+            border-radius: 5px;
+            // height: max-content;
+            
+            padding:4px 1em;
+
+            margin-bottom: 2em;
+            box-shadow: 2px 2px 5px #0f0f0fa8;
+
+            .card__encabezado{
+                border-radius: 5px;
+                height:10%;
+                color: var(--title-color);
+
+                h2{
+                    // line-height: 100%;
+                    font-size: 1.3em;
+                    margin-left: .5em;
+                    opacity: .7;
+                }
+            }
+
+            .card__contenido{
+
+                // background:var(--bg-card-color);
+                border: 2px solid var(--color);
+                border-radius: 5px;
+                height: 80%;
+                transition: height, 1s ease;
+                overflow-y: scroll;
+                padding: 1em .5em 1em .5em;
+                text-align:justify;
+                // margin: .5em 0 .5em 0;
+
+            //   -webkit-scrollbar el elemento que envuelve al conjunto -webkit-scrollbar-button la barra y los botones -webkit-scrollbar-track
+               
+            &::-webkit-scrollbar {
+                // -webkit-appearance: none;
+                border-radius: 20px;
+                background:#0001;
+            }
+
+            &::-webkit-scrollbar:vertical {
+                width: 10px;
+            }
+
+            &::-webkit-scrollbar-button:increment,
+            &::-webkit-scrollbar-button {
+                display: none;
+            }
+
+            &::-webkit-scrollbar:horizontal {
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #797979;
+                border-radius: 20px;
+                border: 2px solid var(--card-color);
+            }
+
+            &::-webkit-scrollbar-track {
+                border-radius: 10px;
+            }
+            }
+
+            .card__contenido--{
+                
+                display: flex;
+                
+                // img{
+                //     // min-width:100px;
+                //     width: 30%;
+                //     max-width:150px;
+                //     margin-right: 1em;
+                   
+                // }
+                .img{      width: 30%;      max-width:150px;      margin-right: 1em;   }
+            
+                p{
+                    display: flex;
+                    align-items: center;
+                    font-size: 1em;
+               
+
+                }
+            }
+
+            .card__pie{
+                border-radius: 5px;
+                height: 40px;
+
+
+                display: flex;
+                justify-content: flex-end;
+
+                .pie{
+                    align-items: center;
+                    display: flex;
+                    line-height: 10%;
+                    margin-right: .5em;
+                    opacity: .8;
+                    border: none;
+
+                    .text__pie{
+                        // padding: 1.3em;
+                        color: var(--title-color);
+                        opacity: .8;
+                        font-size: 1em;
+                        font-weight: bold;
+    
+                    }
+
+                    i{
+                        position: relative;
+                        font-size:2em;
+                        transition: rotate, .8s ease-out;
+    
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        
+
+                        
+                    }
+                    
+            
+                }
+
+                
+            }
+            
+        }
+    }
+}
+
+.oculto{
+    display: none;
+
+    p{
+        line-height:1.7;
+        padding: 0 1em;
+    }
+}
+.mostrar{
+    display: block;
+
+}
+
+body.darkmode .mostrar strong{
+    color: var(--title-color);
+    font-weight: normal;
+}
+
+.active--i{
+    transform: rotate(-540deg);
+    color: rgb(218, 49, 49);
+    font-size: 3em;
+    animation: arrow linear infinite 1s;
+
+}
+
+.active--c {
+   top: 5vh;
+    height:90vh;
+    
+    width: 90%;
+    z-index: 100;
+    position: fixed;
+
+}
+
+.capa{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    
+    background: rgba(3, 3, 3, 0.514);
+    
+    backdrop-filter: blur(5px);
+    
+    
+}
+body.darkmode .capa{
+    background:#fff1;
+}
+.active--capa{
+    display: block;
+    z-index: 100;
+
+}
+
+
+@media screen and (min-width:720px){
+    main{
+        max-width: 900px;
+        width: 60%;
+    }
+    .active--c{
+        width: 60%;
+
+    }
+    
+   
+    
+    
+}
+
+@media screen and(max-width:720px){
+     main {
+
+        .layer {
+            .card {
+
+                  .card__contenido {
+                      p{
+                          font-size: .9em;
+                      }
+                  }
+
+                .card__encabezado {
+
+                    h2 {
+                        // line-height: 100%;
+                        font-size: 1em;
+                        margin-left: .5em;
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+
+
+         .layer {
+             .card {
+                 p {
+
+                     font-size: .8em;
+
+                 }
+
+
+                 .card__contenido-- {
+
+                     p {
+
+                         font-size: .8em;
+
+                     }
+                 }
+
+             }
+         }
+     }
+     
+}
+
+
+.contenido--reverse{
+    position: relative;
+}
+
+
+
+
+@keyframes arrow {
+    0% {
+        bottom: -10%;
+    }
+
+    75% {
+        bottom: 7%;
+        color: rgb(255, 101, 101);
+    }
+
+    100% {
+        bottom: -10%;
+    }
+}
